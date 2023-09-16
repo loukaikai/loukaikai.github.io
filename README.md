@@ -7,7 +7,7 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/Gaohaoyang/gaohaoyang.github.io/master/LICENSE)
 
 
-
+git remote add origin https://github.com/loukaikai/loukaikai.github.io.git
 ## Content
 
 - [About this Cool Concise Jekyll Blog Theme](#about-this-cool-concise-jekyll-blog-theme)
