@@ -92,8 +92,8 @@ hm
   - ComplexShardingStrategy
       支持多分片键的复杂分片策略。
       - 配置参数：complex.sharding-columns 分片键(多个);complex.algorithm-class-name 分片算法实现类。
-      - 实现方式：
-        shardingColumn指定多个分片列。
+      - 实现方式：  
+        shardingColumn指  定多个分片列。
         algorithmClassName指向一个实现了org.apache.shardingsphere.api.sharding.complex.ComplexKeysShardingAlgorithm接口的java类名。提供按照多个分片列进行综合分片的算法。
         示例：
             com.roy.shardingDemo.algorithm.MyComplexKeysShardingAlgorithm
@@ -243,6 +243,24 @@ OLAP场景中，通常涉及到非常多复杂的SQL，分库分表的限制就�
 清晰明了。而至于水平拆分，会给后期带来非常非常多的数据问题，所以应该谨
 慎、谨慎再谨慎。一般也就在日志表、操作记录表等很少的一些边缘场景才偶尔用
 用。
+
+# 分库分表方案设计实战
+
+接下来，我们来给电商的商品管理模块设计一个分库分表的方案，来理解下分库分表应该如何落地。
+一个典型的电商场景，商品管理模块大致的功能组件如下图：
+
+![tableStruct](/image/shardShpere/tableStruct.png)
+
+针对这个场景，考虑到商品信息会持续增长，越来越多的情况，要如何设计分库
+分表方案？
+1、以业务为单位考虑对数据进行垂直分片，店铺、产品、商品三种业务数据垂直拆
+分成三个不同的库。字典表作为广播表冗余到三个不同的库中。
+2、考虑数据增长情况，商品将会是以后增长最快的数据，店铺和产品的数据增速会
+逐渐降低。所以对商品表进行分片。
+3、将关联性较强的商品信息表和商品补充信息表配置为绑定表。整体分库分表大致如下图：
+
+![tableupdate](/image/shardShpere/tableStructUpdate.png)
+
 
 
 
