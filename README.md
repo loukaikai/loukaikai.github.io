@@ -124,7 +124,7 @@ Of course, I have done a very good mobile adaptation.
 
 ### Footer
 
-**Welcome to use this blog theme, but please keep the theme author info at footer.** Theme designed by [HyG](https://github.com/gaohaoyang).
+**Welcome to use this blog theme, but please keep the theme author info at footer.** Theme designed by [Lkk](https://github.com/loukaikai/loukaikai.github.io).
 
 ![footer](http://ww3.sinaimg.cn/large/7011d6cfjw1f3bepd8002j20hl02ct95.jpg)
 
@@ -191,16 +191,14 @@ Mainly shows at the footer of the site.
 
 ```yml
 # other links
-twitter_username: gaohaoyang126
-facebook_username: gaohaoyang.water
-github_username:  Gaohaoyang
-email: gaohaoyang126@126.com
-weibo_username: 3115521wh
-zhihu_username: gaohaoyang
-linkedIn_username: gaohaoyang
+github_username:  XXXX
+email: XXXXX@126.com
+weibo_username: XXX
+zhihu_username: XXX
+linkedIn_username: XXXX
 dribbble_username:
 
-description_footer: 本站记录我前端之旅的沿途风景！
+description_footer: 本站记录我技术之旅的沿途风景！
 ```
 
 #### Comments info
@@ -351,8 +349,6 @@ You can also donate me for a coffee, and I'll do better. Thanks.
 * `[^]` Rewrite the demo page with Masonry
 * `[-]` Remove jQuery and BootStrap
 
-About my old blog theme, I won't maintain any more. And I put the code at  [Gaohaoyang/old-blog](https://github.com/Gaohaoyang/old-blog).
-
 ## License
 
-[MIT License](https://github.com/Gaohaoyang/gaohaoyang.github.io/blob/master/LICENSE.md)
+[MIT License](https://github.com/loukaikai/loukaikai.github.io/blob/master/LICENSE.md)
